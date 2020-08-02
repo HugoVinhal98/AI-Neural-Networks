@@ -33,7 +33,6 @@ function chooseColor(value) {
     output: [value],
   });
   localStorage.setItem("data", JSON.stringify(newObject));
-  net.train(getDataFromLS());
   setRandomColor();
 }
 
