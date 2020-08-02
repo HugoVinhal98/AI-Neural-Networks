@@ -10,15 +10,16 @@
     <script src="script.js" defer></script>
 
     <style>
-      #header {
-        text-align: center;
-        margin-top: 40px;
-      }
       #container {
         position: fixed;
         top: 50%;
         left: 50%;
+        width: 90%;
         transform: translate(-50%, -50%);
+      }
+      #header {
+        text-align: center;
+        margin-bottom: 100px;
       }
       #box {
         width: 400px;
@@ -29,6 +30,7 @@
         align-items: center;
         flex-direction: column;
         font-size: 25px;
+        margin: auto;
       }
 
       .white {
@@ -47,28 +49,30 @@
     </style>
   </head>
   <body>
-    <div id="header">
-      <h1>
-        Train the neural network to know which color contrasts better with the
-        box background color!
-      </h1>
-      <h2>
-        After some training, refresh the page and check if the colors given by
-        the AI are the ones you think are the most correct!
-      </h2>
-    </div>
     <div id="container">
-      <div id="box">
-        <div class="white">White Text</div>
-        <div>Black Text</div>
-        <br /><br /><br />
-        <div id="guess">AI Guess Text</div>
+      <div id="header">
+        <h1>
+          Train the neural network to know which color contrasts better with the
+          box background color!
+        </h1>
+        <h2>
+          After some training, refresh the page and check if the colors given by
+          the AI are the ones you think are the most correct!
+        </h2>
       </div>
-      <div id="buttons">
-        <button id="white-button">White</button>
-        <button id="black-button">Black</button>
-        <br />
-        <button id="reset-button">Reset Data</button>
+      <div>
+        <div id="box">
+          <div class="white">White Text</div>
+          <div>Black Text</div>
+          <br /><br /><br />
+          <div id="guess">AI Guess Text</div>
+        </div>
+        <div id="buttons">
+          <button id="white-button">White</button>
+          <button id="black-button">Black</button>
+          <br />
+          <button id="reset-button">Reset Data</button>
+        </div>
       </div>
     </div>
   </body>
